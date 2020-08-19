@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 500,
-    height: 450,
+    width: '100%',
+    height: '100%',
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
@@ -30,8 +30,8 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-      <GridList className={classes.gridList}>
-        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+      <GridList className={classes.gridList} cols={5}>
+        <GridListTile key="Subheader" cols={5} style={{ height: 'auto' }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>
         {tileData.map((tile) => (
